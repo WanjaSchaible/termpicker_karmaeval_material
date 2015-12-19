@@ -1,0 +1,705 @@
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix mrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix schema: <http://schema.org/> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix keys: <http://purl.org/NET/c4dm/keys.owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix bibtex: <http://swrc.ontoware.org/ontology#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wordnet: <http://xmlns.com/wordnet/1.6/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix swrc_ext: <http://www.cs.vu.nl/~mcaklein/onto/swrc_ext/2005/05#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix misc: <http://data.semanticweb.org/ns/misc#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix ao: <http://purl.org/ontology/ao/core#> .
+@prefix memex: <http://memexproxy.com/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a3s6qrrgx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "weapons.json" ;
+	km-dev:modelPublicationTime "1447276932976"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"manufacturer\"}],[{\"columnName\":\"title\"}],[{\"columnName\":\"location\"}],[{\"columnName\":\"price\"}],[{\"columnName\":\"url\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"manufacturer\"}],[{\"columnName\":\"title\"}],[{\"columnName\":\"location\"}],[{\"columnName\":\"price\"}],[{\"columnName\":\"url\"}]]" ;
+	km-dev:hasModelLabel "weapons.json" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"url\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"url\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"title\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"title\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"price\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"price\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"location\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"location\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"manufacturer\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"manufacturer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"product_uri\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"product_uri\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"url\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"url\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"title\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"title\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"price\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"price\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"location\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"location\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"manufacturer\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"manufacturer\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"product_uri\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"product_uri\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"url\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://schema.org/Offer\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://schema.org/Offer1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Offer1 (add)\",
+                    \"DomainId\": \"http://schema.org/Offer1\",
+                    \"DomainUri\": \"http://schema.org/Offer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"url\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"url\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"title\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Offer1\",
+                    \"DomainId\": \"http://schema.org/Offer1\",
+                    \"DomainUri\": \"http://schema.org/Offer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"title\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"title\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"location\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/name\",
+                    \"DomainLabel\": \"Thing1\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"location\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"location\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"price\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"schema:Offer1\",
+                    \"DomainId\": \"http://schema.org/Offer1\",
+                    \"DomainUri\": \"http://schema.org/Offer\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"price\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"price\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"manufacturer\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://schema.org/manufacturer\",
+                    \"isPrimary\": true,
+                    \"DomainLabel\": \"owl:Thing2 (add)\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing2\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"manufacturer\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"manufacturer\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP9:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://www.w3.org/2002/07/owl#Thing\",
+                    \"edgeId\": \"http://schema.org/address\",
+                    \"edgeSourceId\": \"http://schema.org/Place1\",
+                    \"edgeTargetId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceUri\": \"http://schema.org/Place\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_252f17a7-935f-48af-86c8-1c2d37a7696c a rr:TriplesMap .
+
+_:node1a3s6qrrgx1 km-dev:hasTriplesMap km-dev:TriplesMap_252f17a7-935f-48af-86c8-1c2d37a7696c .
+
+km-dev:TriplesMap_252f17a7-935f-48af-86c8-1c2d37a7696c km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx2 rr:tableName "weapons.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasLogicalTable _:node1a3s6qrrgx2 .
+
+km-dev:TriplesMap_252f17a7-935f-48af-86c8-1c2d37a7696c rr:logicalTable _:node1a3s6qrrgx2 ;
+	rr:subjectMap _:node1a3s6qrrgx3 .
+
+_:node1a3s6qrrgx1 km-dev:hasSubjectMap _:node1a3s6qrrgx3 .
+
+_:node1a3s6qrrgx3 km-dev:isPartOfMapping _:node1a3s6qrrgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Offer1" ;
+	rr:class schema:Offer ;
+	rr:template "{url}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_ad421392-27ec-42b4-bffe-3516c5a01aa6 rr:predicate rdfs:label .
+
+_:node1a3s6qrrgx4 rr:column "price" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasObjectMap _:node1a3s6qrrgx4 .
+
+km-dev:PredicateObjectMap_ad421392-27ec-42b4-bffe-3516c5a01aa6 rr:objectMap _:node1a3s6qrrgx4 .
+
+km-dev:TriplesMap_252f17a7-935f-48af-86c8-1c2d37a7696c rr:predicateObjectMap km-dev:PredicateObjectMap_ad421392-27ec-42b4-bffe-3516c5a01aa6 .
+
+km-dev:PredicateObjectMap_ad421392-27ec-42b4-bffe-3516c5a01aa6 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ad421392-27ec-42b4-bffe-3516c5a01aa6 .
+
+km-dev:PredicateObjectMap_bf6d16a0-4eec-46ad-a92e-ecd05c325493 rr:predicate rdfs:label .
+
+_:node1a3s6qrrgx5 rr:column "title" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasObjectMap _:node1a3s6qrrgx5 .
+
+km-dev:PredicateObjectMap_bf6d16a0-4eec-46ad-a92e-ecd05c325493 rr:objectMap _:node1a3s6qrrgx5 .
+
+km-dev:TriplesMap_252f17a7-935f-48af-86c8-1c2d37a7696c rr:predicateObjectMap km-dev:PredicateObjectMap_bf6d16a0-4eec-46ad-a92e-ecd05c325493 .
+
+km-dev:PredicateObjectMap_bf6d16a0-4eec-46ad-a92e-ecd05c325493 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_bf6d16a0-4eec-46ad-a92e-ecd05c325493 .
+
+km-dev:TriplesMap_8482c31d-0c15-416b-93ec-7ac195a88b96 a rr:TriplesMap .
+
+_:node1a3s6qrrgx1 km-dev:hasTriplesMap km-dev:TriplesMap_8482c31d-0c15-416b-93ec-7ac195a88b96 .
+
+km-dev:TriplesMap_8482c31d-0c15-416b-93ec-7ac195a88b96 km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx6 rr:tableName "weapons.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasLogicalTable _:node1a3s6qrrgx6 .
+
+km-dev:TriplesMap_8482c31d-0c15-416b-93ec-7ac195a88b96 rr:logicalTable _:node1a3s6qrrgx6 ;
+	rr:subjectMap _:node1a3s6qrrgx7 .
+
+_:node1a3s6qrrgx1 km-dev:hasSubjectMap _:node1a3s6qrrgx7 .
+
+_:node1a3s6qrrgx7 km-dev:isPartOfMapping _:node1a3s6qrrgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://schema.org/Place1" ;
+	rr:class schema:Place ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "schema:Place1" .
+
+km-dev:PredicateObjectMap_b4a898ce-4de6-4a55-a15c-ff9e260ab5e7 rr:predicate schema:address .
+
+km-dev:RefObjectMap_2a61b36b-4db9-42ca-b864-8ebadebd1c17 a rr:RefObjectMap , rr:ObjectMap ;
+	rr:parentTriplesMap km-dev:TriplesMap_283e845f-fe19-4933-a551-274ee41dd0d0 ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasObjectMap km-dev:RefObjectMap_2a61b36b-4db9-42ca-b864-8ebadebd1c17 .
+
+km-dev:PredicateObjectMap_b4a898ce-4de6-4a55-a15c-ff9e260ab5e7 rr:objectMap km-dev:RefObjectMap_2a61b36b-4db9-42ca-b864-8ebadebd1c17 .
+
+km-dev:TriplesMap_8482c31d-0c15-416b-93ec-7ac195a88b96 rr:predicateObjectMap km-dev:PredicateObjectMap_b4a898ce-4de6-4a55-a15c-ff9e260ab5e7 .
+
+km-dev:PredicateObjectMap_b4a898ce-4de6-4a55-a15c-ff9e260ab5e7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_b4a898ce-4de6-4a55-a15c-ff9e260ab5e7 .
+
+km-dev:TriplesMap_283e845f-fe19-4933-a551-274ee41dd0d0 a rr:TriplesMap .
+
+_:node1a3s6qrrgx1 km-dev:hasTriplesMap km-dev:TriplesMap_283e845f-fe19-4933-a551-274ee41dd0d0 .
+
+km-dev:TriplesMap_283e845f-fe19-4933-a551-274ee41dd0d0 km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx8 rr:tableName "weapons.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasLogicalTable _:node1a3s6qrrgx8 .
+
+km-dev:TriplesMap_283e845f-fe19-4933-a551-274ee41dd0d0 rr:logicalTable _:node1a3s6qrrgx8 ;
+	rr:subjectMap _:node1a3s6qrrgx9 .
+
+_:node1a3s6qrrgx1 km-dev:hasSubjectMap _:node1a3s6qrrgx9 .
+
+_:node1a3s6qrrgx9 km-dev:isPartOfMapping _:node1a3s6qrrgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "owl:Thing1" .
+
+km-dev:PredicateObjectMap_847373c4-8361-4af1-a997-c9f4eefee5b7 rr:predicate schema:name .
+
+_:node1a3s6qrrgx10 rr:column "location" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasObjectMap _:node1a3s6qrrgx10 .
+
+km-dev:PredicateObjectMap_847373c4-8361-4af1-a997-c9f4eefee5b7 rr:objectMap _:node1a3s6qrrgx10 .
+
+km-dev:TriplesMap_283e845f-fe19-4933-a551-274ee41dd0d0 rr:predicateObjectMap km-dev:PredicateObjectMap_847373c4-8361-4af1-a997-c9f4eefee5b7 .
+
+km-dev:PredicateObjectMap_847373c4-8361-4af1-a997-c9f4eefee5b7 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_847373c4-8361-4af1-a997-c9f4eefee5b7 .
+
+km-dev:TriplesMap_28f1dac9-8551-46b6-bc9b-9380204ef46b a rr:TriplesMap .
+
+_:node1a3s6qrrgx1 km-dev:hasTriplesMap km-dev:TriplesMap_28f1dac9-8551-46b6-bc9b-9380204ef46b .
+
+km-dev:TriplesMap_28f1dac9-8551-46b6-bc9b-9380204ef46b km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx11 rr:tableName "weapons.json" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasLogicalTable _:node1a3s6qrrgx11 .
+
+km-dev:TriplesMap_28f1dac9-8551-46b6-bc9b-9380204ef46b rr:logicalTable _:node1a3s6qrrgx11 ;
+	rr:subjectMap _:node1a3s6qrrgx12 .
+
+_:node1a3s6qrrgx1 km-dev:hasSubjectMap _:node1a3s6qrrgx12 .
+
+_:node1a3s6qrrgx12 km-dev:isPartOfMapping _:node1a3s6qrrgx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing2" ;
+	rr:class owl:Thing ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "owl:Thing2" .
+
+km-dev:PredicateObjectMap_ee33676e-1746-462b-afda-476b6ef65b56 rr:predicate schema:manufacturer .
+
+_:node1a3s6qrrgx13 rr:column "manufacturer" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasObjectMap _:node1a3s6qrrgx13 .
+
+km-dev:PredicateObjectMap_ee33676e-1746-462b-afda-476b6ef65b56 rr:objectMap _:node1a3s6qrrgx13 .
+
+km-dev:TriplesMap_28f1dac9-8551-46b6-bc9b-9380204ef46b rr:predicateObjectMap km-dev:PredicateObjectMap_ee33676e-1746-462b-afda-476b6ef65b56 .
+
+km-dev:PredicateObjectMap_ee33676e-1746-462b-afda-476b6ef65b56 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3s6qrrgx1 .
+
+_:node1a3s6qrrgx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_ee33676e-1746-462b-afda-476b6ef65b56 .

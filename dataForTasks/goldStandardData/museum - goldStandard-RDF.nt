@@ -1,0 +1,35 @@
+<http://examplelink.org/002> <http://erlangen-crm.org/current/P3_has_note> "Four case metal" .
+_:ecrm_E54_Dimension1_4a36238a1c7a27e47e056ec275f9a3a41312086a_N14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E54_Dimension> .
+_:ecrm_E22_Man-Made_Object1_6c6cd34dea841ead20491c81d08037f1da0d8259_N6 <http://erlangen-crm.org/current/P138i_has_representation> <http://examplelink.org/002> .
+_:ecrm_E54_Dimension1_4a36238a1c7a27e47e056ec275f9a3a41312086a_N14 <http://erlangen-crm.org/current/P90_has_value> "w:6cm l:3cm" .
+_:ecrm_E22_Man-Made_Object1_6c6cd34dea841ead20491c81d08037f1da0d8259_N6 <http://www.w3.org/2000/01/rdf-schema#label> "MCT9549" .
+_:ecrm_E57_Material1_4963bb059132fa0c8cce273c8722240ad961b535_N12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E57_Material> .
+_:ecrm_E57_Material1_4963bb059132fa0c8cce273c8722240ad961b535_N12 <http://www.w3.org/2004/02/skos/core#prefLabel> "metal" .
+_:ecrm_E22_Man-Made_Object1_6c6cd34dea841ead20491c81d08037f1da0d8259_N6 <http://erlangen-crm.org/current/P43_has_dimension> _:ecrm_E54_Dimension1_4a36238a1c7a27e47e056ec275f9a3a41312086a_N14 .
+<http://examplelink.org/002> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E38_Image> .
+_:ecrm_E22_Man-Made_Object1_6c6cd34dea841ead20491c81d08037f1da0d8259_N6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E22_Man-Made_Object> .
+_:ecrm_E22_Man-Made_Object1_6c6cd34dea841ead20491c81d08037f1da0d8259_N6 <http://erlangen-crm.org/current/P45_consists_of> _:ecrm_E57_Material1_4963bb059132fa0c8cce273c8722240ad961b535_N12 .
+
+_:ecrm_E22_Man-Made_Object1_53f5076f01cccf4b5bc633f6b087c27d156e00cb_N20 <http://erlangen-crm.org/current/P138i_has_representation> <http://examplelink.org/001> .
+<http://examplelink.org/001> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E38_Image> .
+_:ecrm_E54_Dimension1_95d2402d7de23dfeedfaf52ca6d7fe1dfc280695_N16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E54_Dimension> .
+_:ecrm_E22_Man-Made_Object1_53f5076f01cccf4b5bc633f6b087c27d156e00cb_N20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E22_Man-Made_Object> .
+<http://examplelink.org/001> <http://erlangen-crm.org/current/P3_has_note> "red, grey and brown lacquer." .
+_:ecrm_E22_Man-Made_Object1_53f5076f01cccf4b5bc633f6b087c27d156e00cb_N20 <http://www.w3.org/2000/01/rdf-schema#label> "Painting 1" .
+_:ecrm_E57_Material1_e8002c169040af08d8b4ed2f0d636b840f335f9b_N19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E57_Material> .
+_:ecrm_E57_Material1_e8002c169040af08d8b4ed2f0d636b840f335f9b_N19 <http://www.w3.org/2004/02/skos/core#prefLabel> "wood" .
+_:ecrm_E22_Man-Made_Object1_53f5076f01cccf4b5bc633f6b087c27d156e00cb_N20 <http://erlangen-crm.org/current/P43_has_dimension> _:ecrm_E54_Dimension1_95d2402d7de23dfeedfaf52ca6d7fe1dfc280695_N16 .
+_:ecrm_E22_Man-Made_Object1_53f5076f01cccf4b5bc633f6b087c27d156e00cb_N20 <http://erlangen-crm.org/current/P45_consists_of> _:ecrm_E57_Material1_e8002c169040af08d8b4ed2f0d636b840f335f9b_N19 .
+_:ecrm_E54_Dimension1_95d2402d7de23dfeedfaf52ca6d7fe1dfc280695_N16 <http://erlangen-crm.org/current/P90_has_value> "w:18cm l:34cm" .
+
+<http://examplelink.org/003> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E38_Image> .
+_:ecrm_E22_Man-Made_Object1_67435cbe2e535b931bd4eb294f653dfb1c535f21_N26 <http://erlangen-crm.org/current/P43_has_dimension> _:ecrm_E54_Dimension1_dc23b3b96112c9ed04236382aa9093673042027a_N22 .
+_:ecrm_E54_Dimension1_dc23b3b96112c9ed04236382aa9093673042027a_N22 <http://erlangen-crm.org/current/P90_has_value> "w:1cm l:5cm" .
+_:ecrm_E57_Material1_e30bfd0c38dca4ae75091549a8a74cf9ce38db16_N25 <http://www.w3.org/2004/02/skos/core#prefLabel> "stone" .
+_:ecrm_E54_Dimension1_dc23b3b96112c9ed04236382aa9093673042027a_N22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E54_Dimension> .
+_:ecrm_E22_Man-Made_Object1_67435cbe2e535b931bd4eb294f653dfb1c535f21_N26 <http://erlangen-crm.org/current/P45_consists_of> _:ecrm_E57_Material1_e30bfd0c38dca4ae75091549a8a74cf9ce38db16_N25 .
+_:ecrm_E22_Man-Made_Object1_67435cbe2e535b931bd4eb294f653dfb1c535f21_N26 <http://erlangen-crm.org/current/P138i_has_representation> <http://examplelink.org/003> .
+_:ecrm_E22_Man-Made_Object1_67435cbe2e535b931bd4eb294f653dfb1c535f21_N26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E22_Man-Made_Object> .
+_:ecrm_E22_Man-Made_Object1_67435cbe2e535b931bd4eb294f653dfb1c535f21_N26 <http://www.w3.org/2000/01/rdf-schema#label> "Sculpture 4" .
+<http://examplelink.org/003> <http://erlangen-crm.org/current/P3_has_note> "n.a." .
+_:ecrm_E57_Material1_e30bfd0c38dca4ae75091549a8a74cf9ce38db16_N25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://erlangen-crm.org/current/E57_Material> .

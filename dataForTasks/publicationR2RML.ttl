@@ -1,0 +1,1520 @@
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix mrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix schema: <http://schema.org/> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix keys: <http://purl.org/NET/c4dm/keys.owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix bibtex: <http://swrc.ontoware.org/ontology#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wordnet: <http://xmlns.com/wordnet/1.6/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix swrc_ext: <http://www.cs.vu.nl/~mcaklein/onto/swrc_ext/2005/05#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix misc: <http://data.semanticweb.org/ns/misc#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix ao: <http://purl.org/ontology/ao/core#> .
+@prefix memex: <http://memexproxy.com/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a3pr51b1x1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "publicationData.csv" ;
+	km-dev:modelPublicationTime "1447197574499"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[]" ;
+	km-dev:hasOutputColumns "[]" ;
+	km-dev:hasModelLabel "publicationData.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Person\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"Person_uri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"http://ex1.org/\\\" + getValue(\\\"Person\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"id\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"id\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Person_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Person_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Person\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Person\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Publication\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Publication\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Track\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Track\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Issue Date\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Issue Date\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"id\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"id\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Person_uri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Person_uri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Person\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Person\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Publication\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Publication\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Issue Date\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Issue Date\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Track\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Track\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Person\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"Person1\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"label\",
+                \"value\": \"owl:Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"uri\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"AddNodeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"literalValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"literalType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"isUri\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"AddLiteralNodeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Publication\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"FullType\": \"http://purl.org/dc/terms/title\",
+                    \"DomainLabel\": \"Thing1\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Publication\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Publication\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"label\",
+                \"value\": \"swc:TrackEvent1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"uri\",
+                \"value\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"AddNodeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Track\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"swc:TrackEvent1\",
+                    \"DomainId\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent1\",
+                    \"DomainUri\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Track\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Track\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"literalValue\",
+                \"value\": \"1234\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"literalType\",
+                \"value\": \"xsd:gYear\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"nodeId\",
+                \"value\": \"1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isUri\",
+                \"value\": false,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"AddLiteralNodeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Person_uri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Person\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Person1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"foaf:Person1\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Person\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Person_uri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#seeAlso\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"\",
+                    \"edgeId\": \"http://purl.org/dc/elements/1.1/creator\",
+                    \"edgeTargetId\": \"1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"label\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"DeleteNodeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"label\",
+                \"value\": \"Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"DeleteNodeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#seeAlso\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Document\",
+                    \"edgeId\": \"http://data.semanticweb.org/ns/swc/ontology#isPartOf\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeSourceId\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent1\",
+                    \"edgeSourceUri\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"edgeId\": \"http://purl.org/dc/terms/creator\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeSourceUri\": \"http://xmlns.com/foaf/0.1/Document\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://purl.org/dc/terms/creator\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Document1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://data.semanticweb.org/ns/swc/ontology#isPartOf\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeSourceId\": \"http://data.semanticweb.org/ns/swc/ontology#TrackEvent1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#range\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"edgeSourceUri\": \"http://xmlns.com/foaf/0.1/Document\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"oldNodeId\",
+                \"value\": \"http://xmlns.com/foaf/0.1/Document1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newNodeUri\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newNodeId\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeNodeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [
+                    {
+                        \"edgeId\": \"http://purl.org/dc/elements/1.1/creator\",
+                        \"edgeTargetId\": \"1\",
+                        \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\"
+                    },
+                    {
+                        \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#range\",
+                        \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                        \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\"
+                    }
+                ],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP2:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#range\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP3:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://www.w3.org/2000/01/rdf-schema#range\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [{
+                    \"edgeTargetUri\": \"http://xmlns.com/foaf/0.1/Person\",
+                    \"edgeId\": \"http://purl.org/dc/elements/1.1/relation\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"edgeSourceUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"initialEdges\",
+                \"value\": [{
+                    \"edgeId\": \"http://purl.org/dc/elements/1.1/relation\",
+                    \"edgeTargetId\": \"http://xmlns.com/foaf/0.1/Person1\",
+                    \"edgeSourceId\": \"http://www.w3.org/2002/07/owl#Thing1\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newEdges\",
+                \"value\": [],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeInternalNodeLinksCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"oldNodeId\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newNodeUri\",
+                \"value\": \"http://purl.org/ontology/bibo/AcademicArticle\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newNodeId\",
+                \"value\": \"http://purl.org/ontology/bibo/AcademicArticle1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeNodeCommand\"
+    },
+    {
+        \"tags\": [\"Modeling\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"alignmentId\",
+                \"value\": \"WSP1:WS1AL\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"oldNodeId\",
+                \"value\": \"http://purl.org/ontology/bibo/AcademicArticle1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"id\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newNodeUri\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newNodeId\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"ChangeNodeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_3a195819-7e7a-42f6-be97-b6c6a435b36e a rr:TriplesMap .
+
+_:node1a3pr51b1x1 km-dev:hasTriplesMap km-dev:TriplesMap_3a195819-7e7a-42f6-be97-b6c6a435b36e .
+
+km-dev:TriplesMap_3a195819-7e7a-42f6-be97-b6c6a435b36e km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x2 rr:tableName "publicationData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasLogicalTable _:node1a3pr51b1x2 .
+
+km-dev:TriplesMap_3a195819-7e7a-42f6-be97-b6c6a435b36e rr:logicalTable _:node1a3pr51b1x2 ;
+	rr:subjectMap _:node1a3pr51b1x3 .
+
+_:node1a3pr51b1x1 km-dev:hasSubjectMap _:node1a3pr51b1x3 .
+
+_:node1a3pr51b1x3 km-dev:isPartOfMapping _:node1a3pr51b1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://data.semanticweb.org/ns/swc/ontology#TrackEvent1" ;
+	rr:class swc:TrackEvent ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "swc:TrackEvent1" .
+
+km-dev:PredicateObjectMap_6be2610c-037c-4e59-9b89-d7284d509284 rr:predicate rdfs:label .
+
+_:node1a3pr51b1x4 rr:column "Track" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasObjectMap _:node1a3pr51b1x4 .
+
+km-dev:PredicateObjectMap_6be2610c-037c-4e59-9b89-d7284d509284 rr:objectMap _:node1a3pr51b1x4 .
+
+km-dev:TriplesMap_3a195819-7e7a-42f6-be97-b6c6a435b36e rr:predicateObjectMap km-dev:PredicateObjectMap_6be2610c-037c-4e59-9b89-d7284d509284 .
+
+km-dev:PredicateObjectMap_6be2610c-037c-4e59-9b89-d7284d509284 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_6be2610c-037c-4e59-9b89-d7284d509284 .
+
+km-dev:TriplesMap_73dd1b25-a291-459a-a090-adfe5752744d a rr:TriplesMap .
+
+_:node1a3pr51b1x1 km-dev:hasTriplesMap km-dev:TriplesMap_73dd1b25-a291-459a-a090-adfe5752744d .
+
+km-dev:TriplesMap_73dd1b25-a291-459a-a090-adfe5752744d km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x5 rr:tableName "publicationData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasLogicalTable _:node1a3pr51b1x5 .
+
+km-dev:TriplesMap_73dd1b25-a291-459a-a090-adfe5752744d rr:logicalTable _:node1a3pr51b1x5 ;
+	rr:subjectMap _:node1a3pr51b1x6 .
+
+_:node1a3pr51b1x1 km-dev:hasSubjectMap _:node1a3pr51b1x6 .
+
+_:node1a3pr51b1x6 km-dev:isPartOfMapping _:node1a3pr51b1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "owl:Thing1" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_4e06ff86-08c7-406f-93c2-6663c41502ac rr:predicate terms:title .
+
+_:node1a3pr51b1x7 rr:column "Publication" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasObjectMap _:node1a3pr51b1x7 .
+
+km-dev:PredicateObjectMap_4e06ff86-08c7-406f-93c2-6663c41502ac rr:objectMap _:node1a3pr51b1x7 .
+
+km-dev:TriplesMap_73dd1b25-a291-459a-a090-adfe5752744d rr:predicateObjectMap km-dev:PredicateObjectMap_4e06ff86-08c7-406f-93c2-6663c41502ac .
+
+km-dev:PredicateObjectMap_4e06ff86-08c7-406f-93c2-6663c41502ac a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_4e06ff86-08c7-406f-93c2-6663c41502ac .
+
+km-dev:TriplesMap_d0b05bad-6ef8-4995-aa52-d21627c95d30 a rr:TriplesMap .
+
+_:node1a3pr51b1x1 km-dev:hasTriplesMap km-dev:TriplesMap_d0b05bad-6ef8-4995-aa52-d21627c95d30 .
+
+km-dev:TriplesMap_d0b05bad-6ef8-4995-aa52-d21627c95d30 km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x8 rr:tableName "publicationData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasLogicalTable _:node1a3pr51b1x8 .
+
+km-dev:TriplesMap_d0b05bad-6ef8-4995-aa52-d21627c95d30 rr:logicalTable _:node1a3pr51b1x8 ;
+	rr:subjectMap _:node1a3pr51b1x9 .
+
+_:node1a3pr51b1x1 km-dev:hasSubjectMap _:node1a3pr51b1x9 .
+
+_:node1a3pr51b1x9 km-dev:isPartOfMapping _:node1a3pr51b1x1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Person1" ;
+	rr:class foaf:Person ;
+	rr:template "http://ex1.org/{Person}" .
+
+km-dev:PredicateObjectMap_34b2945b-d825-4ee6-9830-6ba3b5ce0af9 rr:predicate rdfs:label .
+
+_:node1a3pr51b1x10 rr:column "Person" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasObjectMap _:node1a3pr51b1x10 .
+
+km-dev:PredicateObjectMap_34b2945b-d825-4ee6-9830-6ba3b5ce0af9 rr:objectMap _:node1a3pr51b1x10 .
+
+km-dev:TriplesMap_d0b05bad-6ef8-4995-aa52-d21627c95d30 rr:predicateObjectMap km-dev:PredicateObjectMap_34b2945b-d825-4ee6-9830-6ba3b5ce0af9 .
+
+km-dev:PredicateObjectMap_34b2945b-d825-4ee6-9830-6ba3b5ce0af9 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3pr51b1x1 .
+
+_:node1a3pr51b1x1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_34b2945b-d825-4ee6-9830-6ba3b5ce0af9 .

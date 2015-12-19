@@ -1,0 +1,35 @@
+_:mo_MusicArtist1_a7fea5e5cf76a8aa33effcef36e4aca7ef5f754d_N6_3d2c110e618337e3529804cbc0524ee85e9594a9_N8 <http://xmlns.com/foaf/0.1/made> _:mo_Record1_b3b59019355bc3044a69c28c0fa1bf7c6562378d_N12 .
+_:mo_MusicGroup1_6b63f83c3206b8377e2a7f1133393c4e2e06e093_N10 <http://xmlns.com/foaf/0.1/name> "n.a." .
+_:mo_MusicGroup1_6b63f83c3206b8377e2a7f1133393c4e2e06e093_N10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicGroup> .
+_:mo_Record1_b3b59019355bc3044a69c28c0fa1bf7c6562378d_N12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
+_:mo_MusicArtist1_a7fea5e5cf76a8aa33effcef36e4aca7ef5f754d_N6_3d2c110e618337e3529804cbc0524ee85e9594a9_N8 <http://purl.org/ontology/mo/wikipedia> _:foaf_Document1_25b2e5570c95bc79de9c09f8926eeaf71dd4bf66_N14 .
+_:foaf_Document1_25b2e5570c95bc79de9c09f8926eeaf71dd4bf66_N14 <http://www.w3.org/2000/01/rdf-schema#label> "https://en.wikipedia.org/wiki/David_Garrett_%28musician%29" .
+_:mo_Record1_b3b59019355bc3044a69c28c0fa1bf7c6562378d_N12 <http://purl.org/dc/elements/1.1/title> "Encore" .
+_:foaf_Document1_25b2e5570c95bc79de9c09f8926eeaf71dd4bf66_N14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:mo_MusicArtist1_a7fea5e5cf76a8aa33effcef36e4aca7ef5f754d_N6_3d2c110e618337e3529804cbc0524ee85e9594a9_N8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicArtist> .
+_:mo_MusicArtist1_a7fea5e5cf76a8aa33effcef36e4aca7ef5f754d_N6_3d2c110e618337e3529804cbc0524ee85e9594a9_N8 <http://xmlns.com/foaf/0.1/name> "David Garrett" .
+_:mo_MusicArtist1_a7fea5e5cf76a8aa33effcef36e4aca7ef5f754d_N6_3d2c110e618337e3529804cbc0524ee85e9594a9_N8 <http://purl.org/ontology/mo/member_of> _:mo_MusicGroup1_6b63f83c3206b8377e2a7f1133393c4e2e06e093_N10 .
+
+_:mo_Record1_cce7155371fc26686b89c7452337d8419692f31e_N19 <http://purl.org/dc/elements/1.1/title> "Reload" .
+_:foaf_Document1_13c7c2c45d092bbff4177bc9be39ec6e3b7c6af5_N16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .
+_:mo_MusicGroup1_6b63f83c3206b8377e2a7f1133393c4e2e06e093_N18 <http://xmlns.com/foaf/0.1/name> "n.a." .
+_:mo_Record1_cce7155371fc26686b89c7452337d8419692f31e_N19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
+_:mo_MusicArtist1_03db3c9d1478dedb74f43c29aefc539a7634fcde_N20_69dc2461937b0608a3d9ade8d7876357c22c7c11_N17 <http://purl.org/ontology/mo/wikipedia> _:foaf_Document1_13c7c2c45d092bbff4177bc9be39ec6e3b7c6af5_N16 .
+_:mo_MusicArtist1_03db3c9d1478dedb74f43c29aefc539a7634fcde_N20_69dc2461937b0608a3d9ade8d7876357c22c7c11_N17 <http://xmlns.com/foaf/0.1/name> "Tom Jones" .
+_:mo_MusicGroup1_6b63f83c3206b8377e2a7f1133393c4e2e06e093_N18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicGroup> .
+_:mo_MusicArtist1_03db3c9d1478dedb74f43c29aefc539a7634fcde_N20_69dc2461937b0608a3d9ade8d7876357c22c7c11_N17 <http://purl.org/ontology/mo/member_of> _:mo_MusicGroup1_6b63f83c3206b8377e2a7f1133393c4e2e06e093_N18 .
+_:mo_MusicArtist1_03db3c9d1478dedb74f43c29aefc539a7634fcde_N20_69dc2461937b0608a3d9ade8d7876357c22c7c11_N17 <http://xmlns.com/foaf/0.1/made> _:mo_Record1_cce7155371fc26686b89c7452337d8419692f31e_N19 .
+_:mo_MusicArtist1_03db3c9d1478dedb74f43c29aefc539a7634fcde_N20_69dc2461937b0608a3d9ade8d7876357c22c7c11_N17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicArtist> .
+_:foaf_Document1_13c7c2c45d092bbff4177bc9be39ec6e3b7c6af5_N16 <http://www.w3.org/2000/01/rdf-schema#label> "https://en.wikipedia.org/wiki/Tom_Jones_%28singer%29" .
+
+_:mo_MusicArtist1_e15da5aa3506fc1b368267222cf4a614748f8ce8_N26_f46b4113653d348b7f8da49492bf1bd39ffa3b3a_N23 <http://xmlns.com/foaf/0.1/made> _:mo_Record1_163bccf4289efdffc6d136a1048871cb9e4f1c1a_N25 .
+_:mo_MusicGroup1_ef3e2310e3d1db877e0cc9081a0790dd914e57cd_N24 <http://xmlns.com/foaf/0.1/name> "The Beatles" .
+_:mo_MusicGroup1_ef3e2310e3d1db877e0cc9081a0790dd914e57cd_N24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicGroup> .
+_:mo_MusicArtist1_e15da5aa3506fc1b368267222cf4a614748f8ce8_N26_f46b4113653d348b7f8da49492bf1bd39ffa3b3a_N23 <http://xmlns.com/foaf/0.1/name> "Paul McCartney" .
+_:mo_MusicArtist1_e15da5aa3506fc1b368267222cf4a614748f8ce8_N26_f46b4113653d348b7f8da49492bf1bd39ffa3b3a_N23 <http://purl.org/ontology/mo/wikipedia> _:foaf_Document1_26bb2583271c435dd5aa97243aab64b5204786bf_N22 .
+_:foaf_Document1_26bb2583271c435dd5aa97243aab64b5204786bf_N22 <http://www.w3.org/2000/01/rdf-schema#label> "https://en.wikipedia.org/wiki/Paul_McCartney" .
+_:mo_MusicArtist1_e15da5aa3506fc1b368267222cf4a614748f8ce8_N26_f46b4113653d348b7f8da49492bf1bd39ffa3b3a_N23 <http://purl.org/ontology/mo/member_of> _:mo_MusicGroup1_ef3e2310e3d1db877e0cc9081a0790dd914e57cd_N24 .
+_:mo_MusicArtist1_e15da5aa3506fc1b368267222cf4a614748f8ce8_N26_f46b4113653d348b7f8da49492bf1bd39ffa3b3a_N23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/MusicArtist> .
+_:mo_Record1_163bccf4289efdffc6d136a1048871cb9e4f1c1a_N25 <http://purl.org/dc/elements/1.1/title> "Abbey Road" .
+_:mo_Record1_163bccf4289efdffc6d136a1048871cb9e4f1c1a_N25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/ontology/mo/Record> .
+_:foaf_Document1_26bb2583271c435dd5aa97243aab64b5204786bf_N22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Document> .

@@ -1,0 +1,705 @@
+@prefix protege: <http://protege.stanford.edu/plugins/owl/protege#> .
+@prefix mrel: <http://id.loc.gov/vocabulary/relators/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix status: <http://purl.org/ontology/bibo/status/> .
+@prefix swrlb: <http://www.w3.org/2003/11/swrlb#> .
+@prefix schema: <http://schema.org/> .
+@prefix ecrm: <http://erlangen-crm.org/current/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix keys: <http://purl.org/NET/c4dm/keys.owl#> .
+@prefix bibo: <http://purl.org/ontology/bibo/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix cc: <http://web.resource.org/cc/> .
+@prefix ical: <http://www.w3.org/2002/12/cal/ical#> .
+@prefix terms: <http://purl.org/dc/terms/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix mo: <http://purl.org/ontology/mo/> .
+@prefix bibtex: <http://swrc.ontoware.org/ontology#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix event: <http://purl.org/NET/c4dm/event.owl#> .
+@prefix xsp: <http://www.owl-ontologies.com/2005/08/07/xsp.owl#> .
+@prefix wot: <http://xmlns.com/wot/0.1/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix scharp: <http://scharp.usc.isi.edu/ontology/> .
+@prefix prism: <http://prismstandard.org/namespaces/1.2/basic/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix wordnet: <http://xmlns.com/wordnet/1.6/> .
+@prefix gn: <http://www.geonames.org/ontology#> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix sioc: <http://rdfs.org/sioc/ns#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix swrc_ext: <http://www.cs.vu.nl/~mcaklein/onto/swrc_ext/2005/05#> .
+@prefix swc: <http://data.semanticweb.org/ns/swc/ontology#> .
+@prefix frbr: <http://purl.org/vocab/frbr/core#> .
+@prefix ns: <http://www.w3.org/2003/06/sw-vocab-status/ns#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix degrees: <http://purl.org/ontology/bibo/degrees/> .
+@prefix misc: <http://data.semanticweb.org/ns/misc#> .
+@prefix swrl: <http://www.w3.org/2003/11/swrl#> .
+@prefix dcam: <http://purl.org/dc/dcam/> .
+@prefix ao: <http://purl.org/ontology/ao/core#> .
+@prefix memex: <http://memexproxy.com/ontology/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix rr: <http://www.w3.org/ns/r2rml#> .
+@prefix km-dev: <http://isi.edu/integration/karma/dev#> .
+
+_:node1a3q8tb8gx1 a km-dev:R2RMLMapping ;
+	km-dev:sourceName "musicData.csv" ;
+	km-dev:modelPublicationTime "1447212002577"^^xsd:long ;
+	km-dev:modelVersion "1.7" ;
+	km-dev:hasInputColumns "[[{\"columnName\":\"Musician\"}],[{\"columnName\":\"Band\"}],[{\"columnName\":\"Album\"}],[{\"columnName\":\"wikipediaPage\"}]]" ;
+	km-dev:hasOutputColumns "[[{\"columnName\":\"Musician\"}],[{\"columnName\":\"Band\"}],[{\"columnName\":\"Album\"}],[{\"columnName\":\"musicianUri\"}],[{\"columnName\":\"wikipediaPage\"}]]" ;
+	km-dev:hasModelLabel "musicData.csv" ;
+	km-dev:hasBaseURI "http://localhost:8080/source/" ;
+	km-dev:hasWorksheetHistory """[
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Musician\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"newColumnName\",
+                \"value\": \"musicianUri\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"transformationCode\",
+                \"value\": \"return \\\"http://ex1.org/\\\" + getValue(\\\"Musician\\\")\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"errorDefaultValue\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"isJSONOutput\",
+                \"value\": \"false\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Musician\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"musicianUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SubmitPythonTransformationCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"id\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"id\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"musicianUri\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"musicianUri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Musician\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Musician\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Band\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Band\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Album\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"Album\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"DateOfBirth\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"DateOfBirth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"wikipediaPage\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"wikipediaPage\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"Transformation\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"orderedColumns\",
+                \"value\": [
+                    {
+                        \"id\": [{\"columnName\": \"id\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"id\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"musicianUri\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"musicianUri\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Musician\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Musician\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Band\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Band\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"Album\"}],
+                        \"visible\": true,
+                        \"hideable\": false,
+                        \"name\": \"Album\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"DateOfBirth\"}],
+                        \"visible\": false,
+                        \"hideable\": true,
+                        \"name\": \"DateOfBirth\"
+                    },
+                    {
+                        \"id\": [{\"columnName\": \"wikipediaPage\"}],
+                        \"visible\": true,
+                        \"hideable\": true,
+                        \"name\": \"wikipediaPage\"
+                    }
+                ],
+                \"type\": \"orderedColumns\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"OrganizeColumnsCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Musician\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://xmlns.com/foaf/0.1/name\",
+                    \"DomainLabel\": \"owl:Thing1 (add)\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Musician\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Musician\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"musicianUri\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyName\",
+                \"value\": \"isUriOfClass\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyUri\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"metaPropertyId\",
+                \"value\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://isi.edu/integration/karma/dev#classLink\",
+                    \"DomainLabel\": \"owl:Thing1\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing1\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"musicianUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"musicianUri\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetMetaPropertyCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Band\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"mo:MusicGroup1 (add)\",
+                    \"DomainId\": \"http://purl.org/ontology/mo/MusicGroup1\",
+                    \"DomainUri\": \"http://purl.org/ontology/mo/MusicGroup\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Band\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Band\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"Album\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://purl.org/dc/elements/1.1/title\",
+                    \"DomainLabel\": \"owl:Thing2 (add)\",
+                    \"DomainId\": \"http://www.w3.org/2002/07/owl#Thing2\",
+                    \"DomainUri\": \"http://www.w3.org/2002/07/owl#Thing\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Album\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"Album\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    },
+    {
+        \"tags\": [\"SemanticType\"],
+        \"model\": \"new\",
+        \"inputParameters\": [
+            {
+                \"name\": \"hNodeId\",
+                \"value\": [{\"columnName\": \"wikipediaPage\"}],
+                \"type\": \"hNodeId\"
+            },
+            {
+                \"name\": \"worksheetId\",
+                \"value\": \"W\",
+                \"type\": \"worksheetId\"
+            },
+            {
+                \"name\": \"selectionName\",
+                \"value\": \"DEFAULT_TEST\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"SemanticTypesArray\",
+                \"value\": [{
+                    \"isPrimary\": true,
+                    \"FullType\": \"http://www.w3.org/2000/01/rdf-schema#label\",
+                    \"DomainLabel\": \"foaf:Document1 (add)\",
+                    \"DomainId\": \"http://xmlns.com/foaf/0.1/Document1\",
+                    \"DomainUri\": \"http://xmlns.com/foaf/0.1/Document\"
+                }],
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"trainAndShowUpdates\",
+                \"value\": true,
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"rdfLiteralType\",
+                \"value\": \"\",
+                \"type\": \"other\"
+            },
+            {
+                \"name\": \"inputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"wikipediaPage\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            },
+            {
+                \"name\": \"outputColumns\",
+                \"value\": \"[{\\\"value\\\":[{\\\"columnName\\\":\\\"wikipediaPage\\\"}]}]\",
+                \"type\": \"hNodeIdList\"
+            }
+        ],
+        \"commandName\": \"SetSemanticTypeCommand\"
+    }
+]""" .
+
+km-dev:TriplesMap_2d9f52f2-9d02-4a73-ac31-7e713c56e409 a rr:TriplesMap .
+
+_:node1a3q8tb8gx1 km-dev:hasTriplesMap km-dev:TriplesMap_2d9f52f2-9d02-4a73-ac31-7e713c56e409 .
+
+km-dev:TriplesMap_2d9f52f2-9d02-4a73-ac31-7e713c56e409 km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx2 rr:tableName "musicData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasLogicalTable _:node1a3q8tb8gx2 .
+
+km-dev:TriplesMap_2d9f52f2-9d02-4a73-ac31-7e713c56e409 rr:logicalTable _:node1a3q8tb8gx2 ;
+	rr:subjectMap _:node1a3q8tb8gx3 .
+
+_:node1a3q8tb8gx1 km-dev:hasSubjectMap _:node1a3q8tb8gx3 .
+
+_:node1a3q8tb8gx3 km-dev:isPartOfMapping _:node1a3q8tb8gx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://purl.org/ontology/mo/MusicGroup1" ;
+	rr:class mo:MusicGroup ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "mo:MusicGroup1" .
+
+km-dev:PredicateObjectMap_f7c209e3-4ca6-4ca8-ac37-4b7a6c79112b rr:predicate rdfs:label .
+
+_:node1a3q8tb8gx4 rr:column "Band" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasObjectMap _:node1a3q8tb8gx4 .
+
+km-dev:PredicateObjectMap_f7c209e3-4ca6-4ca8-ac37-4b7a6c79112b rr:objectMap _:node1a3q8tb8gx4 .
+
+km-dev:TriplesMap_2d9f52f2-9d02-4a73-ac31-7e713c56e409 rr:predicateObjectMap km-dev:PredicateObjectMap_f7c209e3-4ca6-4ca8-ac37-4b7a6c79112b .
+
+km-dev:PredicateObjectMap_f7c209e3-4ca6-4ca8-ac37-4b7a6c79112b a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_f7c209e3-4ca6-4ca8-ac37-4b7a6c79112b .
+
+km-dev:TriplesMap_51ca4ccd-7e23-4e94-a207-4d0a085821e8 a rr:TriplesMap .
+
+_:node1a3q8tb8gx1 km-dev:hasTriplesMap km-dev:TriplesMap_51ca4ccd-7e23-4e94-a207-4d0a085821e8 .
+
+km-dev:TriplesMap_51ca4ccd-7e23-4e94-a207-4d0a085821e8 km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx5 rr:tableName "musicData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasLogicalTable _:node1a3q8tb8gx5 .
+
+km-dev:TriplesMap_51ca4ccd-7e23-4e94-a207-4d0a085821e8 rr:logicalTable _:node1a3q8tb8gx5 ;
+	rr:subjectMap _:node1a3q8tb8gx6 .
+
+_:node1a3q8tb8gx1 km-dev:hasSubjectMap _:node1a3q8tb8gx6 .
+
+_:node1a3q8tb8gx6 km-dev:isPartOfMapping _:node1a3q8tb8gx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing1" ;
+	rr:class owl:Thing ;
+	rr:template "http://ex1.org/{Musician}" ;
+	a km-dev:steinerTreeRootNode .
+
+km-dev:PredicateObjectMap_3af7e8f3-8639-4b8a-9eaf-ed16ea394161 rr:predicate foaf:name .
+
+_:node1a3q8tb8gx7 rr:column "Musician" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasObjectMap _:node1a3q8tb8gx7 .
+
+km-dev:PredicateObjectMap_3af7e8f3-8639-4b8a-9eaf-ed16ea394161 rr:objectMap _:node1a3q8tb8gx7 .
+
+km-dev:TriplesMap_51ca4ccd-7e23-4e94-a207-4d0a085821e8 rr:predicateObjectMap km-dev:PredicateObjectMap_3af7e8f3-8639-4b8a-9eaf-ed16ea394161 .
+
+km-dev:PredicateObjectMap_3af7e8f3-8639-4b8a-9eaf-ed16ea394161 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3af7e8f3-8639-4b8a-9eaf-ed16ea394161 .
+
+km-dev:TriplesMap_5728b87b-28f3-49f3-bdb2-2cf098389a5f a rr:TriplesMap .
+
+_:node1a3q8tb8gx1 km-dev:hasTriplesMap km-dev:TriplesMap_5728b87b-28f3-49f3-bdb2-2cf098389a5f .
+
+km-dev:TriplesMap_5728b87b-28f3-49f3-bdb2-2cf098389a5f km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx8 rr:tableName "musicData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasLogicalTable _:node1a3q8tb8gx8 .
+
+km-dev:TriplesMap_5728b87b-28f3-49f3-bdb2-2cf098389a5f rr:logicalTable _:node1a3q8tb8gx8 ;
+	rr:subjectMap _:node1a3q8tb8gx9 .
+
+_:node1a3q8tb8gx1 km-dev:hasSubjectMap _:node1a3q8tb8gx9 .
+
+_:node1a3q8tb8gx9 km-dev:isPartOfMapping _:node1a3q8tb8gx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://www.w3.org/2002/07/owl#Thing2" ;
+	rr:class owl:Thing ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "owl:Thing2" .
+
+km-dev:PredicateObjectMap_3b356245-9f6d-4ab6-a8c4-1b69d5e6fd0a rr:predicate dc:title .
+
+_:node1a3q8tb8gx10 rr:column "Album" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasObjectMap _:node1a3q8tb8gx10 .
+
+km-dev:PredicateObjectMap_3b356245-9f6d-4ab6-a8c4-1b69d5e6fd0a rr:objectMap _:node1a3q8tb8gx10 .
+
+km-dev:TriplesMap_5728b87b-28f3-49f3-bdb2-2cf098389a5f rr:predicateObjectMap km-dev:PredicateObjectMap_3b356245-9f6d-4ab6-a8c4-1b69d5e6fd0a .
+
+km-dev:PredicateObjectMap_3b356245-9f6d-4ab6-a8c4-1b69d5e6fd0a a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_3b356245-9f6d-4ab6-a8c4-1b69d5e6fd0a .
+
+km-dev:TriplesMap_b1959a39-9527-442d-abfe-58f4100ce15f a rr:TriplesMap .
+
+_:node1a3q8tb8gx1 km-dev:hasTriplesMap km-dev:TriplesMap_b1959a39-9527-442d-abfe-58f4100ce15f .
+
+km-dev:TriplesMap_b1959a39-9527-442d-abfe-58f4100ce15f km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx11 rr:tableName "musicData.csv" ;
+	a rr:LogicalTable ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasLogicalTable _:node1a3q8tb8gx11 .
+
+km-dev:TriplesMap_b1959a39-9527-442d-abfe-58f4100ce15f rr:logicalTable _:node1a3q8tb8gx11 ;
+	rr:subjectMap _:node1a3q8tb8gx12 .
+
+_:node1a3q8tb8gx1 km-dev:hasSubjectMap _:node1a3q8tb8gx12 .
+
+_:node1a3q8tb8gx12 km-dev:isPartOfMapping _:node1a3q8tb8gx1 ;
+	a rr:SubjectMap ;
+	km-dev:alignmentNodeId "http://xmlns.com/foaf/0.1/Document1" ;
+	rr:class foaf:Document ;
+	rr:termType rr:BlankNode ;
+	km-dev:namePrefix "foaf:Document1" .
+
+km-dev:PredicateObjectMap_2c2bfeb2-da02-4d79-8127-8c577ac0a568 rr:predicate rdfs:label .
+
+_:node1a3q8tb8gx13 rr:column "wikipediaPage" ;
+	a rr:ObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasObjectMap _:node1a3q8tb8gx13 .
+
+km-dev:PredicateObjectMap_2c2bfeb2-da02-4d79-8127-8c577ac0a568 rr:objectMap _:node1a3q8tb8gx13 .
+
+km-dev:TriplesMap_b1959a39-9527-442d-abfe-58f4100ce15f rr:predicateObjectMap km-dev:PredicateObjectMap_2c2bfeb2-da02-4d79-8127-8c577ac0a568 .
+
+km-dev:PredicateObjectMap_2c2bfeb2-da02-4d79-8127-8c577ac0a568 a rr:PredicateObjectMap ;
+	km-dev:isPartOfMapping _:node1a3q8tb8gx1 .
+
+_:node1a3q8tb8gx1 km-dev:hasPredicateObjectMap km-dev:PredicateObjectMap_2c2bfeb2-da02-4d79-8127-8c577ac0a568 .
